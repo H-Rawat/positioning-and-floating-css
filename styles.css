@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 /* ---------- HEADER ---------- */
 header {
   display: flex;
@@ -55,4 +59,62 @@ header {
 .header-right a {
   color: white;
   font-weight: bolder;
+}
+
+/* ---------- NAV BAR ---------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 10px;
+}
+
+/* LEFT NAV BAR */
+.nav-bar-left ul {
+  display: flex;
+  align-items: center;
+}
+
+/* RIGHT NAV BAR */
+.nav-bar-right ul {
+  display: flex;
+}
+
+/* For Icons in RIGHT NAV BAR */
+.signin,
+.search {
+  display: flex;
+}
+
+.signin svg,
+.search svg {
+  margin-right: 5px;
+}
+
+/* NAV BAR items */
+ul li {
+  margin-right: 15px;
+}
+
+ul li a {
+  color: black;
+  font-weight: bold;
+}
+
+.leftnavbar-items2 {
+  color: blue;
+}
+
+.nav-bar-left ul li a:hover {
+  color: blue;
+  border-bottom: 6px solid black;
+  padding-bottom: 6px;
+}
+
+.signin:hover,
+.search:hover {
+  color: darkgray;
+  text-decoration: underline;
 }
